@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+    --bg: #6fb98f;
+    --hover: #35ce77;
+}
+
+.row {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0 !important;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 28px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.heading-name {
+    letter-spacing: 3px;
+}
+
+.navList {
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    list-style: none;
+}
+
+.navList li a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.contact-btn {
+    padding: 10px 18px;
+    background-color: var(--bg);
+    border-radius: 20px;
+    color: white !important;
+    opacity: 1 !important;
+    font-weight: 300 !important;
+    transition: 0.3s ease-in;
+}
+
+.contact-btn:hover {
+    background-color: var(--hover);
+}
+
+/* Hero section */
+.heroSection {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.heroSection .row {
+    display: flex;
+    padding: 0 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.iam {
+
+    font-size: 55px;
+    padding: 15px;
+    font-family: sans-serif;
+}
+
+.text {
+    color: var(--bg);
+    /* border-right: 2px solid red; */
+    font-size: 55px;
+    font-family: sans-serif;
+    height: 40px;
+    /* color: rgb(255, 30, 0); */
+}
+.portFolioBtn
+{
+    padding: 14px 22px;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    font-size: 17px;
+    text-decoration: none;
+    background-color: var(--bg);
+}
