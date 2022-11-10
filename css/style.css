@@ -9,10 +9,14 @@ body {
     --hover: #35ce77;
 }
 
+
 .row {
     width: 100%;
+    padding: 22px 15px;
     overflow-x: hidden;
     margin: 0 !important;
+    height: fit-content;
+    overflow-y: hidden !important;
 }
 
 .header-row {
@@ -63,9 +67,12 @@ body {
 
 .heroSection .row {
     display: flex;
-    padding: 0 15px;
     justify-content: center;
     align-items: center;
+}
+
+.heroSection .row>div {
+    margin-top: 20px;
 }
 
 .iam {
@@ -83,8 +90,8 @@ body {
     height: 40px;
     /* color: rgb(255, 30, 0); */
 }
-.portFolioBtn
-{
+
+.portFolioBtn {
     padding: 14px 22px;
     margin-top: 20px;
     color: white;
@@ -92,4 +99,53 @@ body {
     font-size: 17px;
     text-decoration: none;
     background-color: var(--bg);
+}
+
+.portFolioBtn:hover {
+    color: white;
+}
+
+/* Service section */
+.service-wrapper {
+    width: 100%;
+    padding: 20px 0;
+    margin: 20px 0;
+    transition: 0.3s ease-in;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.service-images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.service-content>p {
+    text-align: center;
+}
+.moreInfo
+{
+    font-size: 15px;
+    color: #35ce77;
+    transition: 0.3s ease-in;
+}
+.moreInfo:hover
+{
+    color: var(--hover);
+}
+
+/* Galley section */
+.imagesWrapper
+{
+    margin: 20px 0;
 }
