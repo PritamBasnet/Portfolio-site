@@ -16,7 +16,6 @@ const observer = new IntersectionObserver(entries=>{
 
 
 let wrapperRow = document.querySelectorAll('.row');
-for(const key in wrapperRow)
-{
-    observer.observe(wrapperRow[key]);
-}
+wrapperRow.forEach(function(wrap){
+    observer.observe(wrap);
+});

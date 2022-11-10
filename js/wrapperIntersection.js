@@ -19,7 +19,6 @@ const observerCol = new IntersectionObserver(entries=>{
 });
 // Taking the col-4
 let col4 = document.querySelectorAll('.col-md-4');
-for(const key in col4)
-{
-    observerCol.observe(col4[key]);
-}
+col4.forEach(function(col){
+    observerCol.observe(col);
+});
